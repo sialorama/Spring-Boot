@@ -30,6 +30,6 @@ Cette application Spring Boot expose une API REST basique pour gérer une liste 
 1. Créer une nouvelle application Spring Boot :
 Utilisez Spring Initializr (https://start.spring.io/) pour créer un nouveau projet Spring Boot avec les dépendances suivantes :
 
--- Spring Web
--- Spring Data JPA
--- H2 Database (pour une base de données en mémoire)
+* Spring Web
+* Spring Data JPA
+* H2 Database (pour une base de données en mémoire)
