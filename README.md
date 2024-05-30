@@ -2,7 +2,7 @@
 
 Spring Boot est un projet basé sur le Spring Framework. Il offre une manière plus simple et rapide de configurer, lancer et exécuter des applications, qu'elles soient simples ou basées sur le web. Il est très prisé pour la création de microservices en Java.  
 
-### Avantages Clés de Spring Boot :  
+## Avantages Clés de Spring Boot :  
   
 **Développement Rapide :** Spring Boot propose une approche opinionnée du développement applicatif, se concentrant sur la réduction du temps et des efforts nécessaires pour initier un nouveau projet. Les développeurs peuvent ainsi commencer à coder immédiatement sans se soucier des configurations. Cet outil d'initialisation populaire a servi de modèle pour de nombreux autres outils dans divers projets.  
   
@@ -26,10 +26,29 @@ Spring Boot est un projet basé sur le Spring Framework. Il offre une manière p
 
 Cette application Spring Boot expose une API REST basique pour gérer une liste de tâches (To-Do list).  
 
-**Étapes pour créer l'application
-1. Créer une nouvelle application Spring Boot :
-Utilisez Spring Initializr (https://start.spring.io/) pour créer un nouveau projet Spring Boot avec les dépendances suivantes :
+## Étapes pour créer l'application
+
+1. Créer une nouvelle application Spring Boot:
+Utilisez Spring Initializr ```https://start.spring.io/``` pour créer un nouveau projet Spring Boot avec les dépendances suivantes :
 
 * Spring Web
 * Spring Data JPA
 * H2 Database (pour une base de données en mémoire)
+
+2. Lancer l'application:
+Pour démarrer l'application, exécutez la classe principale TodoAppApplication. Vous pouvez ensuite accéder à l'API REST via l'URL ```http://localhost:8080/api/todos```.
+
+3. Tester l'API:  
+Voici quelques exemples de requêtes CURL pour tester l'API :
+
+i. Ajouter une tache:  
+      ```curl -X POST http://localhost:8080/api/todos -H "Content-Type: application/json" -d '{"title": "Faire les courses", "completed": false}'```
+
+ii. Obtenir toutes les tâches:  
+      ```curl http://localhost:8080/api/todos```
+
+iii. Mettre à jour une tâche:  
+       ```curl -X PUT http://localhost:8080/api/todos/1 -H "Content-Type: application/json" -d '{"title": "Faire les courses", "completed": true}'```
+
+iV. Supprimer une tâche:  
+      ```curl -X DELETE http://localhost:8080/api/todos/1```
