@@ -21,3 +21,15 @@ Spring Boot est un projet basé sur le Spring Framework. Il offre une manière p
 **Métriques de Performance :** Spring Boot Actuator fournit des fonctionnalités prêtes pour la production, sans avoir besoin de les implémenter soi-même.  
 
 **Testabilité :** Il offre un support robuste pour les tests, incluant des annotations de test spécifiques et TestRestTemplate pour les tests d'intégration.  
+
+## Application Spring Boot:
+
+Cette application Spring Boot expose une API REST basique pour gérer une liste de tâches (To-Do list).  
+
+**Étapes pour créer l'application
+1. Créer une nouvelle application Spring Boot :
+Utilisez Spring Initializr (https://start.spring.io/) pour créer un nouveau projet Spring Boot avec les dépendances suivantes :
+
+-- Spring Web
+-- Spring Data JPA
+-- H2 Database (pour une base de données en mémoire)
